@@ -1,326 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Hamed Elfayome - Software Engineer</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-        <style>
-            /* Global styles */
-            body {
-                font-family: 'Roboto', sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #bbb;
-                color: #333;
-                line-height: 1.6;
-            }
 
-            .container {
-                max-width: 800px;
-                margin: 20px auto;
-                padding-right: 20px;
-                padding-bottom: 20px;
-                padding-left: 20px;
-                background-color: #fff;
-                box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.35);
-                border-radius: 5px;
-            }
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamed Elfayome - Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
 
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                color: #00508b;
-                margin-bottom: 10px;
-            }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
 
-            a {
-                color: #007bff;
-                text-decoration: none;
-            }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #00508b;
+            margin-bottom: 10px;
+        }
 
-            a:hover {
-                text-decoration: underline;
-            }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
 
-            /* Header styles */
-            .header {
-                text-align: center;
-                padding-bottom: 30px;
-                padding-top: 20px;
-                background-color: #eee;
-                margin-inline: -20px;
-                border-bottom-right-radius: 20px;
-                border-bottom-left-radius: 20px;
+        a:hover {
+            text-decoration: underline;
+        }
 
-            }
+        /* Header styles */
+        .header {
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top: 20px;
+            background-color: #00508bdd;
+            margin-inline: -20px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
 
-            .header h1 {
-                margin: 5px 0;
-                font-size: 32px;
-            }
+        }
 
-            .header p {
-                margin: 5px 0;
-                font-size: 18px;
-                color: #555;
-            }
+        .header h1 {
+            margin: 5px 0;
+            font-size: 40px;
+            color: #fff;
+        }
 
-            .contact-info {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-                margin-top: 10px;
-            }
+        .header p {
+            margin: 5px 0;
+            margin-top: -15px;
+            font-size: 22px;
+            color: #fff;
+        }
 
-            .contact-info p {
-                margin: 5px 10px;
-                color: #555;
-                font-size: 14px;
-            }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .contact-info p {
+            margin: 5px 10px;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .contact-info a {
+            color: #fff;
+        }
 
 
-            /* Section styles */
-            .section {
-                margin-bottom: 30px;
-            }
+        /* Section styles */
+        .section {
+            margin-bottom: 30px;
+        }
 
-            .section-title {
-                border-bottom: 2px solid #00508b;
-                font-size: 24px;
-                color: #00508b;
-            }
+        .section-title {
+            border-bottom: 2px solid #00508b;
+            font-size: 24px;
+            color: #00508b;
+        }
 
-            .section-content {
-                padding-left: 20px;
-                color: #555;
-            }
+        .section-content {
+            padding-left: 20px;
+            color: #555;
+        }
 
-            .bullet {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin-right: 20px;
-                height: 30px;
-            }
+        .bullet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 20px;
+            height: 30px;
+        }
 
-            .bullet div {
-                display: flex;
-                align-items: baseline;
-                gap: 10px;
-            }
+        .bullet div {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
 
-            .project {
-                margin-bottom: 20px;
-            }
+        .project {
+            margin-bottom: 20px;
+        }
 
-            .project h3 {
-                color: #333;
-            }
+        .project h3 {
+            color: #333;
+        }
 
-            .project ul li {
-                margin-left: 20px;
-            }
+        .project ul li {
+            margin-left: 20px;
+        }
 
-            .highlights {
-                list-style-type: none;
-                padding: 0;
-                margin: 5px 0;
-                color: #555;
-            }
+        .highlights {
+            list-style-type: none;
+            padding: 0;
+            margin: 5px 0;
+            color: #555;
+        }
 
-            .highlights li {
-                margin-bottom: 5px;
-            }
+        .highlights li {
+            margin-bottom: 5px;
+        }
 
-            /* Skills section styles */
-            .skills {
-                margin-top: 20px;
-            }
+        /* Skills section styles */
+        .skills {
+            margin-top: 20px;
+        }
 
-            .skills ul {
-                padding: 0;
-                margin: 5px 0;
-                color: #555;
-            }
+        .skills ul {
+            padding: 0;
+            margin: 5px 0;
+            color: #555;
+        }
 
-            .skills li {
-                list-style-type: none;
-                margin-bottom: 5px;
-            }
+        .skills li {
+            list-style-type: none;
+            margin-bottom: 5px;
+        }
 
-            /* Soft skills section styles */
-            .soft-skills {
-                color: #555;
-                display: flex;
-                gap: 20px;
-            }
+        /* Soft skills section styles */
+        .soft-skills {
+            color: #555;
+            display: flex;
+            gap: 20px;
+        }
 
-            /* Additional section styles */
-            .additional {
-                margin-top: 20px;
-            }
-        </style>
-    </head>
+        /* Additional section styles */
+        .additional {
+            margin-top: 20px;
+        }
+    </style>
+</head>
 
-    <body>
-        <div class="container">
-            <header class="header">
-                <h1>Hamed Elfayome</h1>
-                <p>Software Engineer</p>
-                <div class="contact-info">
-                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+201552161469">+201552161469</a></p>
-                    <p><i class="far fa-envelope"></i> <a href="mailto:hamedelfayome@gmail.com">hamedelfayome@gmail.com</a></p>
-                    <p><i class="fas fa-map-marker-alt"></i> Alexandria, Egypt</p>
-                    <p><i class="fab fa-linkedin-in"></i> <a href="https://linkedin.com/in/hamed-elfayome">hamed-elfayome</a></p>
-                    <p><i class="fab fa-github"></i> <a href="https://github.com/hamed-elfayome">hamed-elfayome</a></p>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Hamed Elfayome</h1>
+            <p>Software Engineer</p>
+            <div class="contact-info">
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:+201552161469">+201552161469</a></p>
+                <p><i class="far fa-envelope"></i> <a href="mailto:hamedelfayome@gmail.com">hamedelfayome@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Alexandria, Egypt</p>
+                <p><i class="fab fa-linkedin-in"></i> <a href="https://linkedin.com/in/hamed-elfayome">hamed-elfayome</a></p>
+                <p><i class="fab fa-github"></i> <a href="https://github.com/hamed-elfayome">hamed-elfayome</a></p>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="section-content">
+                <div class="bullet">
+                    <p><strong>BS</strong> - University of Alexandria, Civil Engineering</p>
+                    <p>Sep. 2023</p>
                 </div>
-            </header>
+            </div>
+        </section>
 
-            <section class="section">
-                <h2 class="section-title">Education</h2>
-                <div class="section-content">
-                    <div class="bullet">
-                        <p><strong>BS</strong> - University of Alexandria, Civil Engineering</p>
-                        <p>Sep. 2023</p>
-                    </div>
+        <section class="section">
+            <h2 class="section-title">Courses</h2>
+            <div class="section-content">
+                <div class="bullet">
+                    <p><strong>Laracast</strong> Laravel Main Path - Level 2</p>
+                    <p>Feb. 2024</p>
                 </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">Courses</h2>
-                <div class="section-content">
-                    <div class="bullet">
-                        <p><strong>Laracast</strong> Laravel Main Path - Level 2</p>
-                        <p>Feb. 2024</p>
-                    </div>
-                    <div class="bullet">
-                        <p><strong>CS50-W</strong> web Programming with Python and JavaScript</p>
-                        <p>Jan. 2023</p>
-                    </div>
-                    <div class="bullet">
-                        <p><strong>CS50-AI</strong> Introduction to Artificial Intelligence with Python</p>
-                        <p>Mar. 2022</p>
-                    </div>
-                    <div class="bullet">
-                        <p><strong>CS50</strong> Introduction to Computer Science</p>
-                        <p>Oct. 2021</p>
-                    </div>
+                <div class="bullet">
+                    <p><strong>CS50-W</strong> web Programming with Python and JavaScript</p>
+                    <p>Jan. 2023</p>
                 </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">Projects</h2>
-                <div class="section-content">
-                    <div class="project">
-                        <div class="bullet">
-                            <div>
-                                <h3>E-commerce Website (In Progress)</h3>
-                                -<a href="https://github.com/hamed-elfayome/shop-website">Repo</a>
-                            </div>
-                            <p>May 2024 - Present</p>
-                        </div>
-                        <ul class="highlights">
-                            <li>- Building a full-featured e-commerce platform with Laravel, Livewire, and Tailwind CSS.</li>
-                            <li>- Implementing product listings, cart functionality, secure checkout via Stripe, and order management.</li>
-                            <li>- Enhancing user experience with 4+ Livewire components such as real-time cart and checkout interactions.</li>
-                            <li>- Designing a modern, responsive interface with Tailwind CSS.</li>
-                        </ul>
-                    </div>
-                    <div class="project">
-                        <div class="bullet">
-                            <div>
-                                <h3>
-                                    <a href="https://cairo-coin.azurewebsites.net/Plus/">Cairo Coin <i class="fa-solid fa-link"></i></a>
-                                </h3>
-                                -<a href="https://github.com/hamed-elfayome/Cairo-Coin">Repo</a>
-                            </div>
-                            <p>Jan. 2024</p>
-                        </div>
-                        <ul class="highlights">
-                            <li>- Initiated and engineered a web application to combat the opacity of Egypt's parallel currency markets.</li>
-                            <li>- Aggregated and cleaned data from 10+ online sources, improving data accuracy by 25%.</li>
-                            <li>- Designed and developed 2 distinct user interfaces: one for API users with account management and token tracking, and another for general users with data visualizations.</li>
-                            <li>- Built a secure Django RestFull API with token-based access controls to provide regulated access to the markets data.</li>
-                        </ul>
-                    </div>
-
-                    <div class="project">
-                        <div class="bullet">
-                            <div>
-                                <h3>
-                                    <a href="https://hamedmoahamed.pythonanywhere.com/All">Auctions <i class="fa-solid fa-link"></i></a>
-                                </h3>
-                                -<a href="https://github.com/hamed-elfayome/CS50-Web/tree/main/commerce">Repo</a>
-                            </div>
-                        </div>
-                        <ul class="highlights">
-                            <li>- Initiated and built a Django-based simple debate platform, facilitating user engagement on various topics, debate creation, and commenting.</li>
-                        </ul>
-                    </div>
-
-                    <div class="project">
-                        <div class="bullet">
-                            <h3>
-                                <a href="https://github.com/hamed-elfayome/Windows-App-Data-Extractor">Windows App Data Extractor <i class="fa-solid fa-link"></i></a>
-                            </h3>
-                        </div>
-
-                        <ul class="highlights">
-                            <li>- Devised 2 different data extraction methods for a Windows application using OCRs and GUI interaction.</li>
-                            <li>- OCR Data Extraction: Captured screenshots, extracted text using 3 different OCRs and evaluated efficiency of OCR methods.</li>
-                            <li>- GUI interaction: Automated window controls for direct text extraction and simulated manual text selection using keyboard shortcuts, reducing data extraction time by 96.3%.</li>
-                        </ul>
-                    </div>
-
-                    <div class="project">
-                        <div class="bullet">
-                            <h3>
-                                <a href="https://github.com/hamed-elfayome/websites-Data-Extractor">Websites Data Extractor <i class="fa-solid fa-link"></i></a>
-                            </h3>
-                        </div>
-
-                        <ul class="highlights">
-                            <li>- Created Python scripts resulting in data extraction from 2 websites.</li>
-                            <li>- Utilized BeautifulSoup and requests libraries for parsing HTML content and retrieving information.</li>
-                        </ul>
-                    </div>
-
-                    <div class="project">
-                        <h3>Course Tasks</h3>
-                        <p style="margin-left: 20px; margin-top: 0"><a href="https://github.com/hamed-elfayome/CS50-Web">CS50-W</a> | <a href="https://github.com/hamed-elfayome/CS50-Ai">CS50-Ai</a></p>
-                    </div>
+                <div class="bullet">
+                    <p><strong>CS50-AI</strong> Introduction to Artificial Intelligence with Python</p>
+                    <p>Mar. 2022</p>
                 </div>
-            </section>
+                <div class="bullet">
+                    <p><strong>CS50</strong> Introduction to Computer Science</p>
+                    <p>Oct. 2021</p>
+                </div>
+            </div>
+        </section>
 
-            <section class="section skills">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="section-content">
-                    <ul>
-                        <li><strong>Programming Languages:</strong> Php, Python, SQL, HTML/CSS, Javascript</li>
-                        <li><strong>Technologies:</strong> Experienced in Django and Laravel web frameworks with SQLite, PostgreSQL, and MySQL databases. Competent in Google Sheets and Apps Script for data management and automation.</li>
-                        <li><strong>LLM:</strong> Proficient in leveraging ChatGPT and Gemini to streamline workflows and enhance project outcomes.</li>
-                        <li><strong>Data Engineering:</strong> Skilled in Python for scraping and cleaning data from various sources using Libs like Selenium, BeautifulSoup, and Requests.</li>
+        <section class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="section-content">
+                <div class="project">
+                    <div class="bullet">
+                        <div>
+                            <h3>E-commerce Website (In Progress)</h3>
+                            -<a href="https://github.com/hamed-elfayome/shop-website">Repo</a>
+                        </div>
+                        <p>May 2024 - Present</p>
+                    </div>
+                    <ul class="highlights">
+                        <li>- Building a full-featured e-commerce platform with Laravel, Livewire, and Tailwind CSS.</li>
+                        <li>- Implementing product listings, cart functionality, secure checkout via Stripe, and order management.</li>
+                        <li>- Enhancing user experience with 4+ Livewire components such as real-time cart and checkout interactions.</li>
+                        <li>- Designing a modern, responsive interface with Tailwind CSS.</li>
                     </ul>
                 </div>
-            </section>
-
-            <section>
-                <h2 class="section-title">Soft Skills</h2>
-                <div class="section-content soft-skills"><span>Solve Problems & Drive Results</span> - <span>Thrive in Teams</span> - <span>Communicate Effectively</span></div>
-            </section>
-
-            <section class="section additional">
-                <h2 class="section-title">Additional</h2>
-                <div class="section-content">
-                    <p><strong>Languages:</strong> Competent in English, Native in Arabic</p>
+                <div class="project">
+                    <div class="bullet">
+                        <div>
+                            <h3>
+                                <a href="https://cairo-coin.azurewebsites.net/Plus/">Cairo Coin <i class="fa-solid fa-link"></i></a>
+                            </h3>
+                            -<a href="https://github.com/hamed-elfayome/Cairo-Coin">Repo</a>
+                        </div>
+                        <p>Jan. 2024</p>
+                    </div>
+                    <ul class="highlights">
+                        <li>- Initiated and engineered a web application to combat the opacity of Egypt's parallel currency markets.</li>
+                        <li>- Aggregated and cleaned data from 10+ online sources, improving data accuracy by 25%.</li>
+                        <li>- Designed and developed 2 distinct user interfaces: one for API users with account management and token tracking, and another for general users with data visualizations.</li>
+                        <li>- Built a secure Django RestFull API with token-based access controls to provide regulated access to the markets data.</li>
+                    </ul>
                 </div>
-            </section>
-        </div>
-    </body>
+
+                <div class="project">
+                    <div class="bullet">
+                        <div>
+                            <h3>
+                                <a href="https://hamedmoahamed.pythonanywhere.com/All">Auctions <i class="fa-solid fa-link"></i></a>
+                            </h3>
+                            -<a href="https://github.com/hamed-elfayome/CS50-Web/tree/main/commerce">Repo</a>
+                        </div>
+                    </div>
+                    <ul class="highlights">
+                        <li>- Initiated and built a Django-based simple debate platform, facilitating user engagement on various topics, debate creation, and commenting.</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <div class="bullet">
+                        <h3>
+                            <a href="https://github.com/hamed-elfayome/Windows-App-Data-Extractor">Windows App Data Extractor <i class="fa-solid fa-link"></i></a>
+                        </h3>
+                    </div>
+
+                    <ul class="highlights">
+                        <li>- Devised 2 different data extraction methods for a Windows application using OCRs and GUI interaction.</li>
+                        <li>- OCR Data Extraction: Captured screenshots, extracted text using 3 different OCRs and evaluated efficiency of OCR methods.</li>
+                        <li>- GUI interaction: Automated window controls for direct text extraction and simulated manual text selection using keyboard shortcuts, reducing data extraction time by 96.3%.</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <div class="bullet">
+                        <h3>
+                            <a href="https://github.com/hamed-elfayome/websites-Data-Extractor">Websites Data Extractor <i class="fa-solid fa-link"></i></a>
+                        </h3>
+                    </div>
+
+                    <ul class="highlights">
+                        <li>- Created Python scripts resulting in data extraction from 2 websites.</li>
+                        <li>- Utilized BeautifulSoup and requests libraries for parsing HTML content and retrieving information.</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h3>Course Tasks</h3>
+                    <p style="margin-left: 20px; margin-top: 0"><a href="https://github.com/hamed-elfayome/CS50-Web">CS50-W</a> | <a href="https://github.com/hamed-elfayome/CS50-Ai">CS50-Ai</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="section-content">
+                <ul>
+                    <li><strong>Programming Languages:</strong> Php, Python, SQL, HTML/CSS, Javascript</li>
+                    <li><strong>Technologies:</strong> Experienced in Django and Laravel web frameworks with SQLite, PostgreSQL, and MySQL databases. Competent in Google Sheets and Apps Script for data management and automation.</li>
+                    <li><strong>LLM:</strong> Proficient in leveraging ChatGPT and Gemini to streamline workflows and enhance project outcomes.</li>
+                    <li><strong>Data Engineering:</strong> Skilled in Python for scraping and cleaning data from various sources using Libs like Selenium, BeautifulSoup, and Requests.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Soft Skills</h2>
+            <div class="section-content soft-skills"><span>Solve Problems & Drive Results</span> - <span>Thrive in Teams</span> - <span>Communicate Effectively</span></div>
+        </section>
+
+        <section class="section additional">
+            <h2 class="section-title">Additional</h2>
+            <div class="section-content">
+                <p><strong>Languages:</strong> Competent in English, Native in Arabic</p>
+            </div>
+        </section>
+    </div>
+</body>
+
 </html>
