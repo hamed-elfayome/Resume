@@ -4,7 +4,10 @@
 
 # Hamed Elfayome
 
-### <span style="color:#00508b;">Software Engineer</span>
+<span style="color:#00508b;">
+
+### _Software Engineer_
+</span>
 
 </div>
 
